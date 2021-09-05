@@ -46,6 +46,6 @@ def handle_args():
 				error(f"Length of argument must be greater than zero")
 		elif v[0] == "-":
 			for value in v[1:]:
-				info[shorthands[value]]()
+				info[shorthands[value]][0]()
 
 add_argument("help", "h", help_function, "Displays this message")
