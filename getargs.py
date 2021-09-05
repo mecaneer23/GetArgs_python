@@ -28,7 +28,7 @@ def add_argument(argument: str, shorthand: str=None, function=help_function, des
 	else:
 		functions[argument] = function
 		shorthands[shorthand] = argument
-		help_message += f"--{argument}\t-{shorthand}\t\t{description}\n"
+		help_message += f"--{argument}    \t-{shorthand}\t\t{description}\n"
 
 def handle_args():
 	for i, v in enumerate(sys.argv):
